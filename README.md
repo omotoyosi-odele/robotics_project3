@@ -56,6 +56,12 @@ A time-based kinematic controller. It calculates the necessary velocities ($v_x,
 
 * **Why use this?** On the physical robot, Mecanum wheels slip against the floor. This slip causes internal wheel encoders (odometry) to drift, failing closed-loop scripts. This open-loop script includes **Calibration Dials** (multipliers) at the top of the code to manually tune the timing for real-world friction and battery voltage.
 
+### 3. `jetauto_control.py` (Works for Both Gazebo & Physical Robot with a slight drift)
+
+A time-based kinematic controller. It calculates the necessary velocities ($v_x, v_y, \omega_z$) and runs them for a specific duration.
+
+* **Why use this?** On the physical robot, Mecanum wheels slip against the floor. This slip causes internal wheel encoders (odometry) to drift, failing closed-loop scripts. This open-loop script includes **Calibration Dials** (multipliers) at the top of the code to manually tune the timing for real-world friction and battery voltage.
+
 ## How to Run
 
 ### Running in Gazebo (Simulation)
